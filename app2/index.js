@@ -7,9 +7,7 @@ const port = 4001;
 
 // Algunas urls para testear:
 // - http://localhost:4001/checker
-// - http://localhost:4001/checker?zone=America/Argentina/Buenos_Aires
-// - http://localhost:4001/checker?zone=America/New_York
-// - http://localhost:4001/checker?zone=Europe/London
+// - http://localhost:4001/checker?zone=America/Argentina/Buenos_Aires&url=api-hora
 // Mas acerca de timezones https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 app.get("/checker", async (req, res) => {
