@@ -4,17 +4,10 @@ services:
     image: api-hora
     ports:
       - "4000:4000"
-    networks:
-      - app-network
 
   app-horario:
     image: app-horario
     ports:
       - "4001:4001"
-    networks:
-      - app-network
     depends_on:
       - api-hora
-
-networks:
-  app-network:
